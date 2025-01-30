@@ -6,4 +6,13 @@
 	<li>
 		<a asp-controller="Informacion" asp-action="ControladorVistaModel">Controlador ---> Vista Model</a>
 	</li>
+	<li>
+		@Html.ActionLink("Vista Controller Get Sin Año", "VistaControllerGet", "Informacion", new { saludo = "buenas" })
+	</li>
+	<li>
+		@Html.ActionLink("Vista Controller Get Con Año", "VistaControllerGet", "Informacion", new { saludo = "buenas", year = 2025 })
+	</li>
+	<li>
+		<a asp-controller="Informacion" asp-action="VistaControllerPost">Vista Controller Post</a>
+	</li>
 </ul>
